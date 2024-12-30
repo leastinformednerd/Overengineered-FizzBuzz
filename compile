@@ -1,0 +1,5 @@
+#/usr/env bash
+
+# This is needed since inexplicably "cargo run -- <file>" doesn't work
+
+cabal build && ./executable example.fb && gcc -g example.c
